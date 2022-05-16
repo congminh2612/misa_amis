@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/main.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="header">
+        <div class="header-left">
+            <div class="header-left__menu-icon">
+
+            </div>
+            <div class="header-left__text">
+                CÔNG TY TNHH SẢN XUẤT - THƯƠNG MẠI - DỊCH VỤ QUI PHÚ
+            </div>
+            <div class="header-left__dropdown-icon"></div>
+        </div>
+        <div class="header-right">
+            <div class="header-right__notifi-icon"></div>
+            <div class="header-right__avatar"></div>
+            <div class="header-right__text-name">Trần Công Minh</div>
+            <div class="header-right__dropdown-icon"></div>
+        </div>
+    </div>
+    <div class="navbar">
+        <div class="navbar-header">
+            <div class="navbar-header__toggle">
+            </div>
+            <div class="navbar-header__logo">
+            </div>
+        </div>
+        <div class="navbar-menu" id="menu">
+            <div class="navbar-menu-item ">
+                <div class="navbar-menu-item__icon icon-dashboard"></div>
+                <div class="navbar-menu-item__title">
+                    Tổng quan
+                </div>
+            </div>
+
+            <div class="navbar-menu-item selected">
+                <div class="navbar-menu-item__icon icon-cash">
+                </div>
+                <div class="navbar-menu-item__title">
+                    Tiền mặt
+                </div>
+            </div>
+
+            <div class="navbar-menu-item">
+                <div class="navbar-menu-item__icon icon-bank"></div>
+                <div class="navbar-menu-item__title">
+                    Tiền gửi
+                </div>
+            </div>
+
+            <div class="navbar-menu-item">
+                <div class="navbar-menu-item__icon icon-buy"></div>
+                <div class="navbar-menu-item__title">
+                    Mua hàng
+                </div>
+            </div>
+            <div class="navbar-menu-item">
+                <div class="navbar-menu-item__icon icon-sell"></div>
+                <div class="navbar-menu-item__title">
+                    Bán hàng
+                </div>
+            </div>
+
+            <div class="navbar-menu-item">
+                <div class="navbar-menu-item__icon icon-invoice"></div>
+                <div class="navbar-menu-item__title">
+                    Quản lí hóa đơn
+                </div>
+            </div>
+            <div class="navbar-menu-item">
+                <div class="navbar-menu-item__icon icon-storehouse"></div>
+                <div class="navbar-menu-item__title">
+                    Kho
+                </div>
+            </div>
+            <div class="navbar-menu-item">
+                <div class="navbar-menu-item__icon icon-tool"></div>
+                <div class="navbar-menu-item__title">
+                    Công cụ dụng cụ
+                </div>
+            </div>
+            <div class="navbar-menu-item">
+                <div class="navbar-menu-item__icon icon-assets"></div>
+                <div class="navbar-menu-item__title">
+                    Tài sản cố định
+                </div>
+            </div>
+            <div class="navbar-menu-item">
+                <div class="navbar-menu-item__icon icon-tax"></div>
+                <div class="navbar-menu-item__title">
+                    Thuế
+                </div>
+            </div>
+            <div class="navbar-menu-item">
+                <div class="navbar-menu-item__icon icon-price"></div>
+                <div class="navbar-menu-item__title">
+                    Giá thành
+                </div>
+            </div>
+            <div class="navbar-menu-item">
+                <div class="navbar-menu-item__icon icon-synthetic"></div>
+                <div class="navbar-menu-item__title">
+                    Tổng hợp
+                </div>
+            </div>
+            <div class="navbar-menu-item">
+                <div class="navbar-menu-item__icon icon-budget"></div>
+                <div class="navbar-menu-item__title">
+                    Ngân sách
+                </div>
+            </div>
+            <div class="navbar-menu-item">
+                <div class="navbar-menu-item__icon icon-report"></div>
+                <div class="navbar-menu-item__title">
+                    Báo cáo
+                </div>
+            </div>
+            <div class="navbar-menu-item">
+                <div class="navbar-menu-item__icon icon-analys"></div>
+                <div class="navbar-menu-item__title">
+                    Phân tích tài chính
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="content">
+        <div class="page-header">
+            <div class="page-header__title">Nhân viên</div>
+
+            <button class="btn-add">Thêm mới nhân viên</button>
+        </div>
+        <div class="container">
+            <div class="container-toolbar">
+                <div class="toolbar-search">
+                    <input class="search-input" type="text" placeholder="Tìm theo mã,tên nhân viên">
+                    <div class="search-icon"></div>
+                </div>
+                <div class="toolbar-refresh">
+                </div>
+            </div>
+            <div class="container-grid">
+                <table class="employeeList">
+                    <thead>
+                        <tr>
+                            <th><input type="checkbox" /></th>
+                            <th class="text-align-left" style="width:120px">MÃ NHÂN VIÊN</th>
+                            <th class="text-align-left" style="width:150px">TÊN NHÂN VIÊN</th>
+                            <th class="text-align-left" style="width:80px">GIỚI TÍNH</th>
+                            <th class="text-align-left" style="width:100px">NGÀY SINH</th>
+                            <th class="text-align-left" style="width:120px">SỐ CMND</th>
+                            <th class="text-align-left" style="width:100px">CHỨC DANH</th>
+                            <th class="text-align-left" style="width:200px">TÊN ĐƠN VỊ</th>
+                            <th class="text-align-left">SỐ TÀI KHOẢN</th>
+                            <th class="text-align-left">TÊN NGÂN HÀNG</th>
+                            <th class="text-align-left">CHI NHÁNH TK NGÂN HÀNG</th>
+                            <th class="text-align-left" style="width:100px">CHỨC NĂNG</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>MS1123</td>
+                            <td>Trần Công Minh</td>
+                            <td>Nam</td>
+                            <td>15/08/2000</td>
+                            <td>026200003489</td>
+                            <td>nhân viên</td>
+                            <td>Phòng công nghệ thông tin</td>
+                            <td>02341241</td>
+                            <td>BIDV</td>
+                            <td>Cầu giấy</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>MS1123</td>
+                            <td>Trần Công Minh</td>
+                            <td>Nam</td>
+                            <td>15/08/2000</td>
+                            <td>026200003489</td>
+                            <td>nhân viên</td>
+                            <td>Phòng công nghệ thông tin</td>
+                            <td>02341241</td>
+                            <td>BIDV</td>
+                            <td>Cầu giấy</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>MS1123</td>
+                            <td>Trần Công Minh</td>
+                            <td>Nam</td>
+                            <td>15/08/2000</td>
+                            <td>026200003489</td>
+                            <td>nhân viên</td>
+                            <td>Phòng công nghệ thông tin</td>
+                            <td>02341241</td>
+                            <td>BIDV</td>
+                            <td>Cầu giấy</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>MS1123</td>
+                            <td>Trần Công Minh</td>
+                            <td>Nam</td>
+                            <td>15/08/2000</td>
+                            <td>026200003489</td>
+                            <td>nhân viên</td>
+                            <td>Phòng công nghệ thông tin</td>
+                            <td>02341241</td>
+                            <td>BIDV</td>
+                            <td>Cầu giấy</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>MS1123</td>
+                            <td>Trần Công Minh</td>
+                            <td>Nam</td>
+                            <td>15/08/2000</td>
+                            <td>026200003489</td>
+                            <td>nhân viên</td>
+                            <td>Phòng công nghệ thông tin</td>
+                            <td>02341241</td>
+                            <td>BIDV</td>
+                            <td>Cầu giấy</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>MS1123</td>
+                            <td>Trần Công Minh</td>
+                            <td>Nam</td>
+                            <td>15/08/2000</td>
+                            <td>026200003489</td>
+                            <td>nhân viên</td>
+                            <td>Phòng công nghệ thông tin</td>
+                            <td>02341241</td>
+                            <td>BIDV</td>
+                            <td>Cầu giấy</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>MS1123</td>
+                            <td>Trần Công Minh</td>
+                            <td>Nam</td>
+                            <td>15/08/2000</td>
+                            <td>026200003489</td>
+                            <td>nhân viên</td>
+                            <td>Phòng công nghệ thông tin</td>
+                            <td>02341241</td>
+                            <td>BIDV</td>
+                            <td>Cầu giấy</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>MS1123</td>
+                            <td>Trần Công Minh</td>
+                            <td>Nam</td>
+                            <td>15/08/2000</td>
+                            <td>026200003489</td>
+                            <td>nhân viên</td>
+                            <td>Phòng công nghệ thông tin</td>
+                            <td>02341241</td>
+                            <td>BIDV</td>
+                            <td>Cầu giấy</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>MS1123</td>
+                            <td>Trần Công Minh</td>
+                            <td>Nam</td>
+                            <td>15/08/2000</td>
+                            <td>026200003489</td>
+                            <td>nhân viên</td>
+                            <td>Phòng công nghệ thông tin</td>
+                            <td>02341241</td>
+                            <td>BIDV</td>
+                            <td>Cầu giấy</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>MS1123</td>
+                            <td>Trần Công Minh</td>
+                            <td>Nam</td>
+                            <td>15/08/2000</td>
+                            <td>026200003489</td>
+                            <td>nhân viên</td>
+                            <td>Phòng công nghệ thông tin</td>
+                            <td>02341241</td>
+                            <td>BIDV</td>
+                            <td>Cầu giấy</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>MS1123</td>
+                            <td>Trần Công Minh</td>
+                            <td>Nam</td>
+                            <td>15/08/2000</td>
+                            <td>026200003489</td>
+                            <td>nhân viên</td>
+                            <td>Phòng công nghệ thông tin</td>
+                            <td>02341241</td>
+                            <td>BIDV</td>
+                            <td>Cầu giấy</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>MS1123</td>
+                            <td>Trần Công Minh</td>
+                            <td>Nam</td>
+                            <td>15/08/2000</td>
+                            <td>026200003489</td>
+                            <td>nhân viên</td>
+                            <td>Phòng công nghệ thông tin</td>
+                            <td>02341241</td>
+                            <td>BIDV</td>
+                            <td>Cầu giấy</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>MS1123</td>
+                            <td>Trần Công Minh</td>
+                            <td>Nam</td>
+                            <td>15/08/2000</td>
+                            <td>026200003489</td>
+                            <td>nhân viên</td>
+                            <td>Phòng công nghệ thông tin</td>
+                            <td>02341241</td>
+                            <td>BIDV</td>
+                            <td>Cầu giấy</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>MS1123</td>
+                            <td>Trần Công Minh</td>
+                            <td>Nam</td>
+                            <td>15/08/2000</td>
+                            <td>026200003489</td>
+                            <td>nhân viên</td>
+                            <td>Phòng công nghệ thông tin</td>
+                            <td>02341241</td>
+                            <td>BIDV</td>
+                            <td>Cầu giấy</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>MS1123</td>
+                            <td>Trần Công Minh</td>
+                            <td>Nam</td>
+                            <td>15/08/2000</td>
+                            <td>026200003489</td>
+                            <td>nhân viên</td>
+                            <td>Phòng công nghệ thông tin</td>
+                            <td>02341241</td>
+                            <td>BIDV</td>
+                            <td>Cầu giấy</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>MS1123</td>
+                            <td>Trần Công Minh</td>
+                            <td>Nam</td>
+                            <td>15/08/2000</td>
+                            <td>026200003489</td>
+                            <td>nhân viên</td>
+                            <td>Phòng công nghệ thông tin</td>
+                            <td>02341241</td>
+                            <td>BIDV</td>
+                            <td>Cầu giấy</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>MS1123</td>
+                            <td>Trần Công Minh</td>
+                            <td>Nam</td>
+                            <td>15/08/2000</td>
+                            <td>026200003489</td>
+                            <td>nhân viên</td>
+                            <td>Phòng công nghệ thông tin</td>
+                            <td>02341241</td>
+                            <td>BIDV</td>
+                            <td>Cầu giấy</td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td><input type="checkbox" /></td>
+                            <td>MS1123</td>
+                            <td>Trần Công Minh</td>
+                            <td>Nam</td>
+                            <td>15/08/2000</td>
+                            <td>026200003489</td>
+                            <td>nhân viên</td>
+                            <td>Phòng công nghệ thông tin</td>
+                            <td>02341241</td>
+                            <td>BIDV</td>
+                            <td>Cầu giấy</td>
+                            <td></td>
+                        </tr>
+
+
+                    </tbody>
+                </table>
+            </div>
+            <div class="container-pagging">
+                <div class="pagging-left">
+                    <div class="pagging-left_title">
+                        Tổng số <b>1035</b> bản ghi
+                    </div>
+                </div>
+                <div class="pagging-right">
+                    <select class="combobox-title" name="" id="">
+                        <option value="0">20 bản ghi trên 1 trang</option>
+                        <option value="1">30 bản ghi trên 1 trang</option>
+                        <option value="2">50 bản ghi trên 1 trang</option>
+                    </select>
+                    <div class="number-page">
+                        <div class="prev">Trước</div>
+                        <div class="number-item number-item_active">1</div>
+                        <div class="number-item">2</div>
+                        <div class="number-item">3</div>
+                        <div class="number-item">...</div>
+                        <div class="number-item">52</div>
+                        <div class="next">Sau</div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="dialog-box">
+        <div class="dialog">
+            <div class="dialog-header">
+                <div class="dialog-header__left">
+                    <div class="dialog-header__left-title">Thông tin nhân viên</div>
+                    <div class="dialog-header__left-checkbox">
+                        <div class="customer">
+                            <input type="checkbox" class="customer-checkbox" value="Là khách hàng" />
+                            <label class="check-title">Là khách hàng</label>
+                        </div>
+                        <div class="supplier">
+                            <input type="checkbox" class="supplier-checkbox" value="Là khách hàng" />
+                            <label class="check-title" for="">Là nhà cung cấp</label>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="dialog-header__right">
+                    <div class="help-icon"></div>
+                    <div class="close-icon"></div>
+                </div>
+            </div>
+            <div class="dialog-form">
+                <div class="row">
+                    <div class="col">
+                        <div class="employeeCode">
+                            <label for="">Mã</label>
+                            <input type="text" class="m-input">
+                        </div>
+                        <div class="employeeName">
+                            <label for="">Họ và tên</label>
+                            <input type="text" class="m-input">
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="employeeDate">
+                            <label for="">Ngày sinh</label>
+                            <input type="text" class="m-input">
+                        </div>
+                        <div class="employeeGender">
+                            <div class="gender gender-male">
+                                <input type="radio" name="gender" value="male" class="input-radio" id="male-option">
+                                <label for="male-option" class="label-radio">Nam</label>
+                                <div class="css-check"></div>
+                            </div>
+                            <div class="gender gender-female">
+                                <input type="radio" name="gender" value="female"
+                                class="input-radio" id="female-option">
+                                <label for="female-option" class="label-radio">Nữ</label>
+                                <div class="css-check"></div>
+                            </div>
+                            <div class="gender orther">
+                                <input type="radio" name="gender" value="orther" id="orther-option"
+                                class="input-radio">
+                                <label for="orther-option" class="label-radio">Khác</label>
+                                <div class="css-check"></div>
+                            </div>
+                            
+                            
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="departmentName ">
+                            <label for="">Phòng ban</label>
+                            <select name="" id="" class="m-combobox" >
+                                <option value="">Phòng Nhân sự</option>
+                                <option value="">Phòng Công nghệ thông tin</option>
+                                <option value="">Phòng Sản xuất</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="passport">
+                            <label for="">Số CMND</label>
+                            <input type="text" class="m-input">
+                        </div>
+                        <div class="passport-date">
+                            <label for="">Ngày cấp</label>
+                            <input type="date" class="m-input">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="position">
+                            <label for="">Chức danh</label>
+                            <input type="text" class="m-input">
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="product-at">
+                            <label for="">Nơi cấp</label>
+                            <input type="text" class="m-input">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="address">
+                        <label for="">Địa chỉ</label>
+                        <input type="text" class="m-input">
+                    </div>
+                </div>
+                <div class="m-row">
+                    <div class="col-2-3">
+                        <div class="phone-number">
+                            <label for="">ĐT di động</label>
+                            <input type="text" class="m-input">
+                        </div>
+                        <div class="phone-number-de">
+                            <label for="">ĐT cố định</label>
+                            <input type="text" class="m-input">
+                        </div>
+                        <div class="email">
+                            <label for="">Email</label>
+                            <input type="text" class="m-input">
+                        </div>
+                    </div>
+                </div>
+                <div class="m-row">
+                    <div class="col-2-3">
+                        <div class="number-bank">
+                            <label for="">Tài khoản ngân hàng</label>
+                            <input type="text" class="m-input">
+                        </div>
+                        <div class="name-bank">
+                            <label for="">Tên ngân hàng</label>
+                            <input type="text" class="m-input">
+                        </div>
+                        <div class="branch">
+                            <label for="">Chi nhánh</label>
+                            <input type="text" class="m-input">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="dialog-footer">
+                <button class="btn btn-cancel">Hủy</button>
+                <button class="btn btn-save">Cất</button>
+                <button class="btn btn-all">Cất và Thêm</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

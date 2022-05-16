@@ -1,0 +1,46 @@
+.container-pagging{
+    width:100%;
+    height:56px;
+    background-color: #fff;
+    position: sticky;
+    bottom:0;
+    display:flex;
+    padding-left:24px;
+    padding-right:48px;
+    align-items:center;
+    justify-content: space-between;
+    
+}
+.pagging-left{
+
+}
+    .combobox-title{
+        height:29px;
+        margin-right:50px;
+        width:180px;
+    }
+.pagging-right{
+    display:flex;
+    /* align-items:center; */
+}
+    .number-page{
+        display:flex;
+        align-items: center;
+        width: 250px;
+    }
+        .prev{
+            margin-right:20px;
+        }
+        .number-item{
+            width:23px;
+            height:20px;
+            margin-right:8px;
+            margin-top: 3px;
+        }
+        .next{
+            margin-left:10px;
+        }
+        .number-item_active{
+            border: 1px solid #ccc;
+            text-align:center;
+        }

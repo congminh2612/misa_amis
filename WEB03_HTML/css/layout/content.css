@@ -1,0 +1,79 @@
+.content{
+    position: absolute;
+    top:48px;
+    left:180px;
+    height:calc(100% - 48px);
+    width: calc(100% - 180px);
+    background-color: #eceef1;
+    padding:24px;
+}
+.page-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+    .page-header__title{
+        font-size: 24px;
+        font-weight:bold;
+    }
+    .btn-add{
+            width:160px;
+            border-radius:4px;
+            color:#fff;
+            height:38px;
+            background-color:#2CA01C;
+            border:none;
+            cursor:pointer;
+        }
+        .btn-add:hover{
+            opacity: 0.8;
+        }
+.container{
+    background-color: #fff;
+    margin-top:18px;
+    height:100%;
+}
+    .container-toolbar{
+        padding-right:24px;
+        padding-top:24px;
+        display:flex;
+        justify-content:flex-end;
+        align-items: center;
+    }   
+        .toolbar-search{
+            position: relative; 
+        }
+            .search-input{
+                max-width: 240px;
+                width:240px;
+                height:34px;
+                border:1px solid #2ca01c;
+                outline:none;
+                border-radius:4px;
+                margin-right:20px;
+            }
+            .search-input::-webkit-input-placeholder{
+                padding-left:12px;
+            }
+            .search-icon{
+                background-image: url(/assets/img/Sprites.64af8f61.svg);
+                background-position: -620px -31px;
+                width: 20px;
+                height: 20px;
+                position:absolute;
+                left:210px;
+                top:9px; 
+                cursor: pointer;
+            }
+        .toolbar-refresh{
+            background-image: url(/assets/img/Sprites.64af8f61.svg);
+            background-position: -1098px -90px;
+            width:20px;
+            height:21px;
+            cursor: pointer;
+            margin-top:2px;
+        }
+
+
+
+

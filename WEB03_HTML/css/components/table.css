@@ -1,0 +1,42 @@
+.container-grid{
+    margin:24px 24px 0 24px;
+    height:562px;
+    overflow-y: scroll;
+}
+
+table.employeeList{
+    width:100%;
+    border-collapse: collapse;
+    
+}
+td{
+    height:44px;
+    border:1px solid #bbb;
+    padding:6px;
+}
+tr:hover{
+    background-color:#f2f9ff;
+    cursor: pointer;
+}
+table th{
+    height:34px;
+    border:1px solid #bbb;
+    padding:6px;
+    background-color:#e5e8ec;
+    position:sticky;
+    top:-1px;
+}
+
+
+/********Tao thanh scroll cho table*/
+.container-grid::-webkit-scrollbar {
+  
+    width: 6px;
+    background-color:#fff;
+}
+::-webkit-scrollbar-thumb {
+    background-color:#ced7e1;
+}
+::-webkit-scrollbar-thumb:hover{
+    background-color:#787a80;
+} 
